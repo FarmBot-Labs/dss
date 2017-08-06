@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+<title>DSS</title>
+<style>
+body {
+  background:rgb(25,25,25);
+  margin:0;
+  color:rgb(225,225,225);
+  font-weight:500;
+  font-size:1.2em;
+}
+</style>
+</head>
+<body>
+<pre></pre>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var shortdelay = 500
+  var longdelay = 1000
+  var normal = {e: 0, t: 25}
+  var slow = {e: 0, t: 200}
+$('pre')
+.typetype('connecting to FarmBot servers', normal)
+.typetype('.....', slow).typetype('done', normal)
+.delay(longdelay).typetype('\n', normal)
+.typetype('importing decision support system', normal)
+.typetype('.........', slow).typetype('not found', normal)
+.delay(longdelay).typetype('\n', normal)
+.typetype('loading information regarding missing component', normal)
+.typetype('......', slow).typetype('done', normal)
+.delay(shortdelay).typetype('\n\n', normal)
+.typetype('data entry: ', normal).delay(shortdelay)
+.typetype('Decision Support System (DSS)', normal)
+.delay(shortdelay).typetype('\n\n', normal)
+.typetype('Description:', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype(`  The DSS uses all available data to create an optimized schedule of
+  operations for FarmBot to grow plants.`, normal)
+.delay(shortdelay).typetype('\n\n', normal)
+.typetype('Components:', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype('  Data Sources:', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype(`    allow for data-driven decisions to be made
+    Local weather, sensors, etc.`, normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype('  Channels:', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype('    for each grow specification (e.g., watering amount)', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype('  Modules:', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype(`    acquire data, make decisions, and output results
+    Data Acquisition Module(s) » Optimization Module(s) » Output Module`, normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype('  Engine:', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype('    coordinates and executes all Channels', normal)
+.delay(shortdelay).typetype('\n\n', normal)
+.typetype('Resources:', normal)
+.delay(shortdelay).typetype('\n', normal)
+.typetype(`  Reference:
+    http://wiki.farmbot.org/decision-support-system`, normal)
+.delay(longdelay*3).typetype('\n\n', normal)
+.typetype(`Interested in helping develop this system?
+https://github.com/FarmBot`, normal)
+})
+</script>
+</body>
+</html>
